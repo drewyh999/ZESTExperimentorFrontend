@@ -1,11 +1,9 @@
 import './App.css';
-import Admin from './components/admin.js';
+import Evaluation from "./components/evaluation";
 
 function App() {
   return (
-    <div className="App">
-      <Admin/>
-    </div>
+    <Evaluation/>
   );
 }
 
