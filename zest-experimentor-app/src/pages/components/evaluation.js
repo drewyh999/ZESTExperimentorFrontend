@@ -1,5 +1,5 @@
 import React from 'react'
-import CodeEvaluation from './quesions/code_evaluation'
+import CodeEvaluation from './questions/code_evaluation'
 
 class Evaluation extends React.Component{
     constructor(props) {

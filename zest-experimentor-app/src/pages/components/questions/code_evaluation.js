@@ -2,7 +2,7 @@ import React from 'react'
 import hljs from 'highlight.js';
 import {Box} from "@mui/material";
 
-import Question from './question'
+import BareQuestion from './bare_question'
 
 
 class CodeEvaluation extends React.Component{
@@ -21,12 +21,6 @@ class CodeEvaluation extends React.Component{
                     questionText:this.props.questionText,
                     questionChoices: [1,2,3,4,5],
                     questionType:"Text",
-                },
-                {
-                    questionID:"hhuiwed87f12d",
-                    questionText:this.props.questionText,
-                    questionChoices: [1,2,3,4,5],
-                    questionType:"MultipleChoices",
                 }
             ]
         }
@@ -60,7 +54,7 @@ class CodeEvaluation extends React.Component{
 
                     <Box sx={{marginTop:3,marginBottom:5,width:"100%",textAlign:"center"}}>
 
-                    <Question questions={this.state.questionEntities}/>
+                    <BareQuestion questions={this.state.questionEntities}/>
 
                     </Box>
 

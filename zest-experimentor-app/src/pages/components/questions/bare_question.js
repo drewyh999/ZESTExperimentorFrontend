@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
-class Question extends React.Component{
+class BareQuestion extends React.Component{
     constructor(props) {
         super(props);
         this.state={
@@ -97,4 +97,4 @@ class Question extends React.Component{
     }
 }
 
-export default Question
+export default BareQuestion
