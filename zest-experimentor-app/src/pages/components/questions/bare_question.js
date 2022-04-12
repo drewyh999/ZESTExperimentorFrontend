@@ -36,7 +36,7 @@ class BareQuestion extends React.Component{
                             <FormControl>
                                 <RadioGroup
                                     name="radio-buttons-group"
-                                    onChange={this.handleChange}>
+                                >
                                     {
                                         questionChoices.map((choice) =>
                                             <FormControlLabel value={choice} control={<Radio/>} label={choice}/>)
