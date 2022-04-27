@@ -3,7 +3,7 @@ import Evaluation from "./components/evaluation";
 
 function App() {
   return (
-    <Evaluation/>
+    <Evaluation mode={"pilot"}/>
   );
 }
 

@@ -9,8 +9,8 @@ class Admin extends React.Component {
 				This is the admin component
 				</h1>
 			</div>
-
-		);}
+		);
+	}
 }
 
 export default Admin;
