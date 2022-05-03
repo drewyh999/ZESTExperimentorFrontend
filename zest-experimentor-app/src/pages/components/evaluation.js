@@ -45,11 +45,11 @@ class Evaluation extends React.Component{
             );
         }
         else if(this.state.questionEntities[0]['@type'] === "CodeEvaluation"){
-            return <CodeEvaluation url={this.state.url} questionEntities={this.state.questionEntities}
+            return <CodeEvaluation key={Date.now()} url={this.state.url} questionEntities={this.state.questionEntities}
                                   getNewQuestions={this.setQuestion.bind(this)} />
         }
         else{
-            return <BareQuestion url={this.state.url} questionEntities={this.state.questionEntities}
+            return <BareQuestion key={Date.now()} url={this.state.url} questionEntities={this.state.questionEntities}
                                  getNewQuestions={this.setQuestion.bind(this)} />
         }
     }

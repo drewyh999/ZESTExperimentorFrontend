@@ -36,14 +36,14 @@ class CodeEvaluation extends React.Component{
                 justifyContent: 'center',}}>
                 <Box sx={{width: '50%', height: 800, overflowY: 'scroll'}} className={'codeSnippet'}>
                     <pre>
-                        <code className={'language-java'}>
+                        <code className={'language-'.concat(this.props.questionEntities[0].codeType)}>
                             {this.props.questionEntities[0].codeText}
                         </code>
                     </pre>
                 </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 3, m: 3, width: 400}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 3, m: 3, width: '50%'}}>
                     <Box >
-                        <BareQuestion url={this.props.url} questionEntities={this.props.questionEntities}
+                        <BareQuestion key={this.props.questionEntities[0].id + "bare"} url={this.props.url} questionEntities={this.props.questionEntities}
                                       getNewQuestions={this.props.getNewQuestions}/>
                     </Box>
                 </Box>
