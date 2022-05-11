@@ -179,15 +179,9 @@ class BareQuestion extends React.Component{
                 }
             }
             else{
-                let multipleTexts = [];
-                Object.keys(this.state[question.id]).forEach((key) =>{
-                   if(this.state[question.id][key]){
-                       multipleTexts.push(key);
-                   }
-                });
                 answer = {
                     questionID: question.id,
-                    answerText: multipleTexts.toString(),
+                    answerText: JSON.stringify(this.state[question.id]),
                     timeSpent: reactionTime
                 }
             }
