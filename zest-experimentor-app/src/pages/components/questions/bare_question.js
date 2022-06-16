@@ -24,7 +24,7 @@ class BareQuestion extends React.Component{
         }
         this.setState({btnLoading:false,errorBackDropOpen:false});
         this.props.questionEntities.forEach((q) => {
-            if(q.questionType === "MULTI_CHOICE"){
+            if(q.questionChoiceType === "MULTI_CHOICE"){
                 const questionChoices = q.questionChoices;
                 const qID = q.id;
                 let checkStates = {}
@@ -64,7 +64,7 @@ class BareQuestion extends React.Component{
         let question_tags_list = [];
         console.log("Processing questions");
         for(let i = 0; i < this.props.questionEntities.length; i ++) {
-            const question_type = this.props.questionEntities[i].questionType;
+            const question_type = this.props.questionEntities[i].questionChoiceType;
             let question_choices_tags;
             switch (question_type) {
                 case 'SCALE_CHOICE': {
