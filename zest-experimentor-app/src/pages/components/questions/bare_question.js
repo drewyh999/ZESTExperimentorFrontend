@@ -145,7 +145,7 @@ class BareQuestion extends React.Component{
                     break;
                 }
                 default: {
-                    question_choices_tags = <h1 key={ i + Date.now()} >Error</h1>
+                    question_choices_tags = <h1 key={ i + Date.now()} >Error： Unknown question type</h1>
                     question_tags_list.push(question_choices_tags);
                     break;
                 }
