@@ -10,7 +10,7 @@ class Evaluation extends React.Component{
         this.state ={
             done:false,
             mode:this.props.mode,
-            url:'https://localhost:8443/'+this.props.mode,
+            url:'https://localhost:8000/'+this.props.mode,
             questionEntities:null
         }
     }
